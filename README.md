@@ -22,7 +22,7 @@ The dataset used in this project includes labeled social media accounts from the
 - Limited analysis to the first 300 tweets per account.  
 - Tokenization and vocabulary creation for encoding BLOC strings.
 
-### Architecture
+## Architecture
 ![\label{fig:q1}](design/Overall_Architecture.png)
 
 ## Models and Results  
