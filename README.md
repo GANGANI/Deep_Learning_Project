@@ -26,11 +26,11 @@ The dataset used in this project includes labeled social media accounts from the
 | Model | Representation         | Accuracy | F1-Score |  
 |-------|-------------------------|----------|----------|  
 | RNN   | Action + Pause          | 0.84     | 0.83     |  
-| RNN   | Content                 | 0.61     | 0.60     |  
-| RNN   | Combined                | 0.83     | 0.83     |  
+|    | Content                 | 0.61     | 0.60     |  
+|    | Combined                | 0.83     | 0.83     |  
 | LSTM  | Action + Pause          | 0.91     | 0.91     |  
-| LSTM  | Content                 | 0.90     | 0.90     |  
-| LSTM  | Combined                | 0.89     | 0.88     |  
+|   | Content                 | 0.90     | 0.90     |  
+|   | Combined                | 0.89     | 0.88     |  
 | GRU   | Action + Pause          | 0.90     | 0.90     |  
-| GRU   | Content                 | 0.89     | 0.89     |  
-| GRU   | Combined                | 0.87     | 0.87     |  
+|    | Content                 | 0.89     | 0.89     |  
+|    | Combined                | 0.87     | 0.87     |  
