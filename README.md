@@ -3,7 +3,7 @@
 This project focuses on detecting social media bots by analyzing user behavior with the **Behavioral Languages for Online Characterization (BLOC)** framework and implementing **deep learning models** like LSTM, GRU, and RNN to capture behavioral dynamics.  
 
 ## Features  
-- Utilize **BLOC framework** to encode user behavior into symbolic sequences.  
+- Utilized **BLOC framework** to encode user behavior into symbolic sequences.  
 - Tokenizes and encodes user actions, content, and timing for analysis.  
 - Models tested:  
   - **RNN**  
