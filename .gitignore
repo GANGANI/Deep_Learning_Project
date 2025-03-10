@@ -1,2 +1,5 @@
 data
 classifiers/rnn/only_action_method/output_file.json
+bloc-change
+
+*.json
