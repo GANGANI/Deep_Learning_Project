@@ -1,4 +1,4 @@
-# LSTM-Based Modeling: Detecting Social Media Bots Through Behavioral Changes
+# Learning Behavioral Dynamics for Suspicious Activity Detection in Social Media
 
 Social media platforms face increasing threats from malicious accounts that spread misinformation, manipulate discussions, and distort public opinion. Traditional detection methods often rely on static features (e.g., profile metadata, follower counts, posting frequency), but these approaches fail to capture the **dynamic behavioral patterns** of users over time.
 
