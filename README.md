@@ -1,6 +1,5 @@
 # LSTM-Based Modeling: Detecting Social Media Bots Through Behavioral Changes
 
-## 📌 About / Introduction
 Social media platforms face increasing threats from malicious accounts that spread misinformation, manipulate discussions, and distort public opinion. Traditional detection methods often rely on static features (e.g., profile metadata, follower counts, posting frequency), but these approaches fail to capture the **dynamic behavioral patterns** of users over time.
 
 This project proposes a novel framework that integrates:
@@ -15,10 +14,12 @@ Our approach demonstrates that explicitly modeling **behavioral dynamics** signi
 ## 📂 Dataset
 We use datasets from the [Bot Repository](https://botometer.osome.iu.edu/bot-repository/datasets.html), which include labeled human and bot accounts across multiple domains (political, commercial, general).  
 
-- Total accounts: **40,604** (18,560 bots, 22,044 humans)  
-- Filtered dataset: **55,408 accounts** (balanced between bots and humans)  
+- Total accounts: **40,604** (18,560 bots, 22,044 humans)
 - Tweets analyzed: **10 million+**  
-- Each account limited to its first 300 tweets, with a minimum threshold of 20 tweets.  
+
+Data Preprocessing
+- Each account is limited to its first 300 tweets, with a minimum threshold of 20 tweets.
+- Tokenization and vocabulary creation for encoding BLOC strings.
 
 ### Dataset Summary  
 
@@ -48,7 +49,7 @@ BLOC encodes user behavior into symbolic “BLOC strings” using multiple alpha
 - **Pause/Time Alphabet:** intervals between actions  
 
 <p align="center">
-  <img src="figures/bloc_framework.png" alt="BLOC Framework" width="500">
+  <img src="figures/BLOC.pdf" alt="BLOC Framework" width="500">
 </p>
 
 This representation captures not only *what* actions were taken, but *when* and *how often*, revealing distinctive behavioral signatures.  
