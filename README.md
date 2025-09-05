@@ -59,7 +59,7 @@ This representation captures not only *what* actions were taken, but *when* and 
 - **Humans:** moderate, organic variation  
 
 <p align="center">
-  <img src="figures/bloc_examples.png" alt="BLOC Examples" width="600">
+  <img src="figures/BLOC-examples.png" alt="BLOC Examples" width="600">
 </p>  
 
 ### 3. Data Preprocessing
