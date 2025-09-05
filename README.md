@@ -91,7 +91,7 @@ Each model includes:
 - Sigmoid output for binary classification  
 
 <p align="center">
-  <img src="figures/architecture.png" alt="Model Architecture" width="600">
+  <img src="figures/architecture.jpg" alt="Model Architecture" width="600">
 </p>  
 
 ---
