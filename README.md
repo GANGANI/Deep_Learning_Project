@@ -1,13 +1,8 @@
 # Learning Behavioral Dynamics for Suspicious Activity Detection in Social Media
 
-Social media platforms face increasing threats from malicious accounts that spread misinformation, manipulate discussions, and distort public opinion. Traditional detection methods often rely on static features (e.g., profile metadata, follower counts, posting frequency), but these approaches fail to capture the **dynamic behavioral patterns** of users over time.
+This project explores social media bot detection by modeling how user behavior evolves over time. Unlike traditional methods that rely on static features (e.g., profile data or posting frequency), our approach combines the Behavioral Languages for Online Characterization (BLOC) framework with LSTM networks to capture both actions and their temporal dynamics.
 
-This project proposes a novel framework that integrates:
-
-- **Behavioral Languages for Online Characterization (BLOC)** – to encode user actions, content features, and temporal pauses into symbolic sequences.  
-- **Deep Learning with Recurrent Models (LSTM)** – to capture sequential dependencies in behavior and identify suspicious activity.  
-
-Our approach demonstrates that explicitly modeling **behavioral dynamics** significantly improves bot detection accuracy compared to static feature–based methods.
+By translating raw social media activity into symbolic sequences and learning from their progression, the system can effectively distinguish human users and automated bots. Our experiments show that explicitly modeling behavioral dynamics leads to higher detection accuracy and greater resilience against adversarial tactics.
 
 ---
 
