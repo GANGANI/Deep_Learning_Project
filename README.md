@@ -49,14 +49,13 @@ BLOC encodes user behavior into symbolic “BLOC strings” using multiple alpha
 - **Pause/Time Alphabet:** intervals between actions  
 
 <p align="center">
-  <img src="figures/BLOC.pdf" alt="BLOC Framework" width="500">
+  <img src="figures/BLOC.png" alt="BLOC Framework" width="500">
 </p>
 
 This representation captures not only *what* actions were taken, but *when* and *how often*, revealing distinctive behavioral signatures.  
 
 ### 2. Capturing Behavioral Changes
-- **Bots:** repetitive patterns with minimal variation  
-- **Suspicious/troll accounts:** highly irregular shifts  
+- **Bots:** repetitive patterns with minimal variation with highly irregular shifts  
 - **Humans:** moderate, organic variation  
 
 <p align="center">
