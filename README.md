@@ -91,7 +91,7 @@ Each model includes:
 - Sigmoid output for binary classification  
 
 <p align="center">
-  <img src="figures/architecture.jpg" alt="Model Architecture" width="600">
+  <img src="figures/architecture.png" alt="Model Architecture" width="600">
 </p>  
 
 ---
@@ -111,7 +111,7 @@ Each model includes:
 | GRU   | Combined             | 86.67%   | 86.67%   |
 
 <p align="center">
-  <img src="figures/RNN_LSTM_GRU.png" alt="Confusion Matrices" width="700">
+  <img src="figures/RNN_LSTM_GRU.jpg" alt="Confusion Matrices" width="700">
 </p>  
 
 ---
