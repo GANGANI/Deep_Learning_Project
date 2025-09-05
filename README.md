@@ -10,11 +10,8 @@ By translating raw social media activity into symbolic sequences and learning fr
 We use datasets from the [Bot Repository](https://botometer.osome.iu.edu/bot-repository/datasets.html), which include labeled human and bot accounts across multiple domains (political, commercial, general).  
 
 - Total accounts: **40,604** (18,560 bots, 22,044 humans)
-- Tweets analyzed: **10 million+**  
-
-Data Preprocessing
+- Tweets analyzed: **10 million+**
 - Each account is limited to its first 300 tweets, with a minimum threshold of 20 tweets.
-- Tokenization and vocabulary creation for encoding BLOC strings.
 
 ### Dataset Summary  
 
@@ -47,6 +44,10 @@ BLOC encodes user behavior into symbolic “BLOC strings” using multiple alpha
   <img src="figures/BLOC.png" alt="BLOC Framework" width="500">
 </p>
 
+<p align="center"><em>
+Fig. 1.BLOC change of Twitter accounts: (a) @FoxNews, (b) @TEN_GOP, (c) @elonmusk
+</em></p>
+
 This representation captures not only *what* actions were taken, but *when* and *how often*, revealing distinctive behavioral signatures.  
 
 ### 2. Capturing Behavioral Changes
@@ -55,9 +56,19 @@ This representation captures not only *what* actions were taken, but *when* and 
 
 <p align="center">
   <img src="figures/BLOC-examples.png" alt="BLOC Examples" width="600">
-</p>  
+</p>
+
+<p align="center"><em>
+Fig. 2. BLOC change of Twitter accounts: (a) @FoxNews, (b) @TEN_GOP, (c) @elonmusk
+</em></p>
+
 
 ### 3. Data Preprocessing
+
+
+Data Preprocessing
+
+  
 We experimented with three representations:  
 1. **Action + Pause**  
 2. **Content**  
@@ -72,7 +83,11 @@ Steps:
   <img src="figures/tokenization.png" alt="Tokenization Example" width="600">
 </p>  
 
-### 4. Model Architectures
+<p align="center"><em>
+Fig. 3. Tokenization and encoding examples for three BLOC representations. Each illustrates how user actions, content, and timing are tokenized, mapped to a vocabulary, and encoded for model input
+</em></p>
+
+### 4. Model Architecture
 We trained three recurrent neural networks:  
 
 - **Vanilla RNN** (baseline)  
@@ -88,6 +103,9 @@ Each model includes:
 <p align="center">
   <img src="figures/architecture.png" alt="Model Architecture" width="600">
 </p>  
+<p align="center"><em>
+Fig. 4. Model Architecture
+</em></p>
 
 ---
 
@@ -108,30 +126,27 @@ Each model includes:
 <p align="center">
   <img src="figures/RNN_LSTM_GRU.jpg" alt="Confusion Matrices" width="700">
 </p>  
+<p align="center"><em>
+Fig. 5. RNN, LSTM, GRU confusion matrices for the test dataset
+</em></p>
 
 ---
 
-## 💡 Discussion
-- Temporal dynamics are crucial: **Action + Pause** was the most effective representation.  
-- LSTM outperformed both RNN and GRU, thanks to its ability to model long-term dependencies.  
-- Content-only features are insufficient on their own.  
-- Combined features introduced noise, lowering performance slightly.  
-- Future work: explore attention mechanisms or transformers for better temporal modeling.  
+## 💡 Conclusion
 
----
-
-## ✅ Conclusion
 This project demonstrates that **explicitly modeling behavioral dynamics** via BLOC + LSTM yields a robust and generalizable framework for detecting bots and suspicious accounts.  
 
+- **Action + Pause** was the most effective representation to capture the temporal dynamics.
+- LSTM outperformed both RNN and GRU, due to its ability to capture both short- and long-term dependencies 
 - Best performance: **91.11% accuracy / F1-score with LSTM + Action + Pause input**.  
-- Our approach offers resilience against adversarial tactics and lays the foundation for scalable, behavior-based monitoring systems.  
+
+Our approach offers resilience against adversarial tactics and lays the foundation for scalable, behavior-based monitoring systems.  
 
 ---
 
 ## 📖 References
 - Nwala, A.C., Flammini, A., & Menczer, F. (2023). *A language framework for modeling social media account behavior*. EPJ Data Science, 12(1), 33.  
 - Bot Repository Datasets: [https://botometer.osome.iu.edu/bot-repository/datasets.html](https://botometer.osome.iu.edu/bot-repository/datasets.html)  
-- Giroux, J., Gangani, A., Nwala, A.C., Fanelli, C. (2024). *Unmasking social bots: How confident are we?* arXiv:2407.13929  
 
 ---
 
